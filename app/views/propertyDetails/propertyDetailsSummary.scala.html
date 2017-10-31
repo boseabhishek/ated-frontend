@@ -37,10 +37,10 @@ backLink: Option[String])(implicit atedContext: AtedContext, messages: Messages)
     </div>
 
     <div class="grid grid-1-2 cya-answer">
-      <span id="address-line-1">@propertyDetails.addressProperty.line_1</span>,<br>
-      <span id="address-line-2">@propertyDetails.addressProperty.line_2</span>,<br>
-      @if(propertyDetails.addressProperty.line_3.isDefined){<span id="address-line-3">@propertyDetails.addressProperty.line_3</span>,<br/>}
-      @if(propertyDetails.addressProperty.line_4.isDefined){<span id="address-line-4">@propertyDetails.addressProperty.line_4</span>,<br/>}
+      <span id="address-line-1">@propertyDetails.addressProperty.line_1</span><br>
+      <span id="address-line-2">@propertyDetails.addressProperty.line_2</span><br>
+      @if(propertyDetails.addressProperty.line_3.isDefined){<span id="address-line-3">@propertyDetails.addressProperty.line_3</span><br/>}
+      @if(propertyDetails.addressProperty.line_4.isDefined){<span id="address-line-4">@propertyDetails.addressProperty.line_4</span><br/>}
       @if(propertyDetails.addressProperty.postcode.isDefined){<span id="address-postcode">@propertyDetails.addressProperty.postcode</span>}
     </div>
 
